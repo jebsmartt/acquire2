@@ -8,3 +8,6 @@ playerC = Player(0)
 playerD = Player(1)
 
 test_game = start_game()
+
+for t in test_game.tileBag.contents:
+    print(t.name)
