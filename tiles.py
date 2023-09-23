@@ -17,4 +17,3 @@ class TileBag:
             for c in TileBag.columns:
                 new_tile = Tile(r,c)
                 self.contents.append(new_tile)
-
