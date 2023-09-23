@@ -1,7 +1,7 @@
 import random
 from game import Game
 from players import Player
-from tiles import Tile,TileBag
+from tiles import Tile,TileBag,Space,Grid
 
 def start_game():
     #instantiate a game
@@ -13,6 +13,11 @@ def start_game():
 
     # Set initial active player id (0 through total number of players (max 6))
     game.activePlayerIndex = random.randint(0, len(Player.current_players)-1)
+
+    #instantiate the Grid
+    grid = Grid()
+    grid.set_grid()
+    game.grid = grid
 
     #instantiate tile bag
     tileBag = TileBag()
